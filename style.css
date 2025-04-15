@@ -1,0 +1,27 @@
+body {
+    background-color: #1d201f; /* Dark background */
+    color: #ffc323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+    text-align: center;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto 20px; /* Center logo and add space below */
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    /* Add src attribute in index.html */
+}
+
+.title {
+    font-size: 4rem; /* Adjust size as needed */
+    text-shadow: 3px 3px 0px #000000; /* Simple shadow for pixel effect */
+} 
