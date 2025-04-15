@@ -24,4 +24,36 @@ body {
 .title {
     font-size: 4rem; /* Adjust size as needed */
     text-shadow: 3px 3px 0px #000000; /* Simple shadow for pixel effect */
-} 
+}
+
+/* Add animation styles */
+.title span {
+    display: inline-block; /* Needed for transform */
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    animation-name: waveScale;
+    animation-duration: 1.5s; /* Duration of one cycle */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* Loop forever */
+}
+
+/* Keyframe animation for scaling */
+@keyframes waveScale {
+    0%, 100% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.2); /* Scale up */
+    }
+}
+
+/* Add delays for wave effect */
+.title span:nth-child(1) { animation-delay: 0.0s; }
+.title span:nth-child(2) { animation-delay: 0.1s; }
+.title span:nth-child(3) { animation-delay: 0.2s; }
+.title span:nth-child(4) { animation-delay: 0.3s; }
+.title span:nth-child(5) { animation-delay: 0.4s; }
+.title span:nth-child(6) { animation-delay: 0.5s; }
+.title span:nth-child(7) { animation-delay: 0.6s; }
+.title span:nth-child(8) { animation-delay: 0.7s; }
+.title span:nth-child(9) { animation-delay: 0.8s; } 
